@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Avity-Produit</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="css/ionicons.css" />
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+				box-sizing: border-box;
+			}
+			img{
+				width: 100%;
+				height: 100%;
+			}
+			/* CORPS DE LA PAGE*/
+			.dark{
+				position: fixed;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.5);
+				overflow: auto;
+			}
+			.invisible{
+				width: 0px;
+				height: 100%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			/* Icones du site */
+			.aa{
+				color: rgb(0,225,100);
+				font-size: 25px;
+				padding-right: 17px;
+			}
+			/* Menu */
+			.menu{
+				width: 250px;
+				height: 400px;
+				margin-left: 5px;
+				display: inline-block;
+				vertical-align: middle;
+				background-color: rgb(35, 35, 35);
+			}
+			/* Image et Nom de Profil */
+			.menu_avatar{
+				width: 100%;
+				height: 75px;
+				overflow: hidden;
+			}
+			.menu_avatar_face{
+				width: 50px;
+				height: 50px;
+				margin-left: 10px;
+				margin-top: 10px;
+				border-radius: 50%;
+				overflow: hidden;
+				display: inline-block;
+				vertical-align: middle;
+				cursor:pointer;
+			}
+			.menu_avatar_face img{
+				width: 100%;
+				height: 100%;
+			}
+			.menu_user_name{
+				width: 175px;
+				display: inline-block;
+				vertical-align: middle;
+				color: rgb(255,255,255);
+				margin-top: 10px;
+				margin-left: 10px;
+				font-family: Arial, sans-serif;
+				font-size: 17px;
+				word-wrap: break-word;
+			}
+			/* Infos sur le Profil */
+			.user-informations{
+				width: 100%;
+				height: 75px;
+				margin-left: 10px;
+				margin-top: 10px;
+				font-family: arial, sans-serif;
+				font-size: 15px;
+				color: rgb(255,225,255);
+			}
+			.user_info{
+				font-weight: normal;
+				color: rgb(0,225,100);
+			}
+			.user_data{
+				color: rgb(0,175,255);
+			}
+			/* Les options de l'utilisateur */
+			.menu_options{
+				width: 100%;
+			}
+			.menu_option{
+				height: 40px;
+				width: 250px;
+			}
+			.menu_option:hover{
+				background-color: rgb(50, 50, 50);
+				cursor:pointer;
+			}
+			.menu_option_icon{
+				width: 25px;
+				height: 20px;
+				display: inline-block;
+				vertical-align: middle;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			.menu_option_icon img{
+				width: 100%;
+				height: 100%;
+			}
+			.menu_option_label{
+				font-family: arial;
+				font-size: 17px;
+				margin-top: 0px;
+				font-weight: bold;
+				text-decoration:none;
+				font-family: arial, sans-serif;
+				color: rgb(255,255,255);
+				display: inline-block;
+				vertical-align: top;
+				margin-top: 10px;
+				margin-left: 15px;
+			}
+			/* Barre de fermeture */
+			.open_close{
+				width: 20px;
+				height: 400px;
+				display: inline-block;
+				vertical-align: middle;
+				background-color: rgb(200, 200, 200);
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+			/* Bouton de fermeture */
+			.close_button{
+				width: 20px;
+				height: 20px;
+				margin-top: 190px;
+			}
+			/* Le Formulaire */
+			.formulary
+			{
+				width: 600px;
+				margin: auto;
+				background-color: rgb(120, 200, 200);
+				border: 1px dotted black;
+				margin-top: 40px;
+				margin-bottom: 40px;	
+			}
+			.formulary label
+			{
+				display: block;
+				width: 150px;
+				float: left;
+				margin-left: 5px;
+				font-weight: bold;
+				font-family: verdana,sans-serif,serif;
+				font-size: 15px;
+			}
+			.formulary_name
+			{
+				font-size: 20px;
+				font-weight: bold;
+				font-weight: italic;
+				color: aqua;
+				text-align: justify;
+				margin:auto;
+				width: 300px;
+			}
+			.button_submit
+			{
+				background-color: blue;
+				color: white;
+				margin-left: 150px;
+			}
+			.button_reset
+			{
+				background-color: red;
+				color:white;
+				margin-left: 10px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<section class="dark">
+			<div class="invisible">
+				
+			</div><section class="menu">
+				
+				<section class="menu_avatar">
+					<figure class="menu_avatar_face">
+						<img src="face.png"/>
+					</figure>
+					<h2 class="menu_user_name" >Souleymane Diallo<h2>					
+				</section>
+				
+				<p class="user-informations">
+					<strong class="user_info">Produits</strong>&nbsp; : &nbsp;<span class="user_data">1</span><br />
+					<strong class="user_info">Services</strong>&nbsp; : &nbsp;<span class="user_data">3</span>
+				</p>
+
+				<section class="menu_options">
+					<section class="menu_option">
+						<a class="menu_option_label" href="Avity-Profil.html"><span class="aa icon ion-person"></span>Mon profil</a>
+					</section>
+
+					<section class="menu_option">
+						<a class="menu_option_label" href="avity_produits.html"><span class="aa icon ion-briefcase"></span>Mes produits</a>
+					</section>
+
+					<section class="menu_option">
+						<a class="menu_option_label" href="avity_ajout_produit.html"><span class="aa icon ion-android-add"></span>Ajouter un produit</a>	
+					</section>
+
+					<section class="menu_option">
+						<a class="menu_option_label" href="avity_services.html"><span class="aa icon ion-ios-briefcase"></span>Mes services</a>	
+					</section>
+
+					<section class="menu_option">
+						<a class="menu_option_label" href="avity_ajout_services.html"><span class="aa icon ion-android-add"></span>Ajouter un service</a>	
+					</section>
+				</section>
+
+			</section><div class="open_close">
+				<figure class="close_button">
+					<a href="#"><img src="ios7-arrow-left.png" /></a>
+				</figure>
+			
+			</div>
+		</section><div class="formulary">
+			<h2 class="formulary_name"> AVITY | CONNEXION </h2><br/>
+			<form method="post" enctype="multipart/form-data" action="#" >
+					<label for="last_name">Nom</label>
+						<input type="text" name="last_name" id="last_name" placeholder="Ex: Camara" /><br/><br/>
+					<label for="surname">Prenom</label>
+						<input type="text" name="surname" id="surname" placeholder="Ex: Mamadou" /><br/><br/>
+					<label for="country">Pays</label>
+						<select name="country" id="country">
+							<optgroup label="Afrique">
+								<option value="guinea">Guinée</option>
+								<option value="senegal">Sénégal</option>
+							</optgroup>
+							<optgroup label="Europe">
+								<option value="french">France</option>
+								<option value="spain">Espagne</option>
+							</optgroup>
+							<optgroup label="Amerique">
+								<option value="usa">Etats-unis</option>
+								<option value="canada">Canada</option>
+							</optgroup>
+						</select><br/><br/>
+					<label for="town">Ville</label>
+						<select name="town" id="town">
+							<option value="conakry">Conakry</option>
+							<option value="kindia">Kindia</option>
+							<option value="mamou">Mamou</option>
+							<option value="kankan">Kankan</option>
+							<option value="nzerekore">N'Zérékoré</option>
+						</select><br/><br/>
+					<label for="pseudo">Nom d'utilsateur</label>
+						<input type="text" name="pseudo" id="pseudo" maxlength="30"/><br/><br/>
+					<label for="password">Mot de Passe</label>
+						<input type="password" name="password" id="password" maxlength="10"/><br/><br/>
+					<label for="password_conf">Mot de passe (Confirmation)</label>
+						<input type="password" name="password_conf" id="password_conf" maxlength="10" /><br/><br/>
+					<input type="submit" value="Valider" class="button_submit" />
+					<input type="reset" value="Annuler" class="button_reset" />
+			</div>
+	</body>
+</html>

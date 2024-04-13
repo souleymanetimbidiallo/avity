@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Mon profil</title>
+        <style type="text/css">
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            html{
+                width: 100%;
+                height: 100%;
+            }
+            body{
+                width: 100%;
+                padding: 40px;
+                background-image: url("flou.png");
+                background-size: 100% 100%;
+                background-attachment: fixed;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            .profil_page{
+                width: 1000px;
+                margin: auto;
+                overflow: hidden;
+                border-radius: 5px;
+                background-color: rgba(255, 255, 255, 0.3);
+            }
+            .profil_picture{
+                width: 225px;
+                height: 250px;
+                margin-top: 25px;
+                margin-left: 25px;
+                display: inline-block;
+                vertical-align: top;
+            }
+            .profil_title{
+                max-width: 500px;
+                height: 250px;
+                margin-top: 25px;
+                margin-left: 10px;
+                overflow: hidden;
+                position: relative;
+                font-family: arial;
+                font-size: 18px;
+                display: inline-block;
+                vertical-align: top;
+                color: rgb(255, 255, 255);
+            }
+            .profil_user_name{
+                height: 30px;
+                font-size: 25px;
+            }
+            .profil_user_info{
+                height: 100px;
+                margin-top: 120px;
+            }
+            .profil_detail{
+                width: 950px;
+                margin: 25px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                overflow: hidden;
+                background-color: rgb(255, 255, 255);
+            }
+            .profil_detail_header{
+                width: 100%;
+                padding-left: 50px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                background-color: rgb(50, 50, 50);
+                font-family: arial;
+                font-size: 20px;
+                font-weight: normal;
+                color: rgb(255, 255, 255);
+            }
+            .profil_detail_data{
+                width: 474px;
+                height: 200px;
+                padding: 25px;
+                font-family: arial;
+                font-size: 18px;
+                display: inline-block;
+                vertical-align: top;
+            }
+            .profil_detail_data tr td{
+                padding: 5px;
+            }
+            .profil_detail_data tr td:nth-child(1){
+                font-weight: bold
+            }
+            .profil_detail_data tr td:nth-child(2){
+                padding-left: 25px;
+            }
+            .profil_detail_separate{
+                width: 2px;
+                height: 150px;
+                margin-top: 25px;
+                display: inline-block;
+                vertical-align: top;
+                background-color: rgb(0, 0, 0);
+            }
+            .profil_elements{
+                width: 100%;
+                position: relative;
+                margin-bottom: 25px;
+            }
+            .profil_elements_header{
+                width: 100%;
+                position: absolute;
+                top: 30px;
+                padding: 15px 25px;
+                background-color: rgb(35, 35, 35);
+                font-family: arial;
+                font-size: 25px;
+                font-weight: normal;
+                color: rgb(255, 255, 255);
+            }
+            .profil_elements_present{
+                width: 950px;
+                margin: auto;
+                padding-top: 120px;
+                padding-bottom: 50px;
+                background-color: rgb(255, 255, 255);
+            }
+            .profil_elements_container{
+                width: 875px;
+                margin: auto;
+            }
+            .profil_element{
+                width: 200px;
+                height: 250px;
+                display: inline-block;
+                vertical-align: top;
+                background-color: rgb(50, 50, 50);
+            }
+            .profil_element:nth-of-type(1),
+            .profil_element:nth-of-type(2),
+            .profil_element:nth-of-type(3){
+                margin-right: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="profil_page">
+            <figure class="profil_picture">
+                <img src="face.png"/>
+            </figure><article class="profil_title">
+                <h1 class="profil_user_name">
+                    Tolno83
+                </h1>
+                <div class="profil_user_info">
+                    <strong>Tel: </strong><br/>
+                    625 65 51 01<br/>
+                    <strong>Email: </strong><br/>
+                    Tolno@gmail.com
+                </div>
+            </article>
+            <article class="profil_detail">
+                <h1 class="profil_detail_header">
+                    Tolno83 - profil
+                </h1>
+                <table class="profil_detail_data">
+                    <tr>
+                        <td>
+                            Nom :
+                        </td>
+                        <td>
+                            Tolno
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Prénom :
+                        </td>
+                        <td>
+                            Blessing
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Pays :
+                        </td>
+                        <td>
+                            Guinée
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Vile ou Préfectutre :
+                        </td>
+                        <td>
+                            Conakry
+                        </td>
+                    </tr>
+                </table><div class="profil_detail_separate">
+                
+                </div><table  class="profil_detail_data">
+                    <tr>
+                        <td>
+                            Nom d'utilisateur :
+                        </td>
+                        <td>
+                            Tolno83
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Tel :
+                        </td>
+                        <td>
+                            625 65 51 01
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email :
+                        </td>
+                        <td>
+                            Tolno@gmail.com
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            <article class="profil_elements">
+                <h1 class="profil_elements_header">
+                    Tolno83 - Produits
+                </h1>
+                <article class="profil_elements_present">
+                    <section  class="profil_elements_container">
+                        <article class="profil_element">
+
+                        </article><article class="profil_element">
+
+                        </article><article class="profil_element">
+
+                        </article><article class="profil_element">
+
+                        </article>
+                    </section>
+                </article>
+            </article>
+            <article class="profil_elements">
+                <h1 class="profil_elements_header">
+                    Tolno83 - Services
+                </h1>
+                <article class="profil_elements_present">
+                    <section  class="profil_elements_container">
+                        <article class="profil_element">
+
+                        </article><article class="profil_element">
+
+                        </article><article class="profil_element">
+
+                        </article><article class="profil_element">
+
+                        </article>
+                    </section>
+                </article>
+            </article>  
+        </section>
+    </body>
+</html>

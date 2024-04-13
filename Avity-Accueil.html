@@ -1,0 +1,441 @@
+ <!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8"/>
+		<title>AVITY</title>
+		<link rel="stylesheet" type="text/css" href="css/ionicons.css"/>
+		<style type="text/css">
+		   	*{
+				margin: 0px;
+				padding: 0px;
+				box-sizing: border-box;
+			}
+			img{
+				width: 100%;
+				height: 100%;
+			}
+			.invisible{
+				width: 0px;
+				height: 100%;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			body{
+				padding-bottom: 50px;
+			}
+			.home_header{
+				width: 100%;  
+			}
+			.home_header_flash{
+				width: 100%;
+				height: 50px;
+				background-color: rgb(0, 50, 45);
+				overflow: hidden;
+			}
+			.avity_logo{
+				width: 55px;
+				height: 50px;
+				margin-left: 100px;
+				display: inline-block;
+				vertical-align: top;
+			}
+			.flash_nav{
+				height: 100%;
+				display: inline-block;
+				vertical-align: middle;
+				float: right;
+				margin-right: 100px;
+			}
+			.flash_nav_link{
+				padding: 10px;
+				height: 100%;
+				display: inline-block;
+				vertical-align: middle;
+				cursor: pointer;
+			}
+			.flash_nav_link:hover{
+				background-color: rgb(0, 30, 25);
+			}
+			.flash_nav_link_text{
+				display: inline-block;
+				vertical-align: middle;
+				font-family: calibri,sans-serif;
+				font-size: 20px;
+				color: rgb(255, 255, 255);
+				text-decoration: none;
+			}
+			.flash_nav_link_text span{
+				font-size: 17px;
+			}
+			.flash_nav_link .down-icon{
+				display: inline-block;
+				vertical-align: middle;
+				margin-left: 5px;
+				margin-top: 5px;
+				font-family: calibri,sans-serif;
+				font-size: 20px;
+				color: rgb(255, 255, 255);
+			}
+			.home_header_nav{
+				width: 100%;
+				height: 30px;
+				padding-left: 100px;
+				background-color: rgb(35, 35, 35);
+			}
+			.header_nav_link{
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.header_nav_link:nth-of-type(2),
+			.header_nav_link:nth-of-type(3){
+				margin-left: 25px;
+			}
+			.header_nav_link_text{
+				font-size: 15px;
+				font-family: calibri, sans-serif;
+				text-decoration: none;
+				color: rgb(255, 255, 255);
+			}
+			.header_nav_link_text:hover{
+				color: rgb(0, 200, 255);
+			}
+			.home_wellcome{
+				width: 100%;
+				height: 650px;
+				position: relative;
+			}
+			.home_wellcome_image{
+				width: 100%;
+				height: 100%;
+			}
+			.home_wellcome_advertisement{
+				width: 400px;
+				position: absolute;
+				top: 75px;
+				right: 250px;
+				padding: 15px;
+				background-color: rgba(0, 0, 0, 0.5);
+				font-size: 30px;
+				font-family: calibri, sans-serif;
+				font-weight: normal;
+				color: rgb(255, 255, 255);
+			}
+			.home_wellcome_advertisement strong{
+				font-family: "century gothic";
+				font-weight: normal;
+				color: rgb(0, 225, 100);
+			}
+			.home_wellcome_article{
+				width: 100%;
+				position: absolute;
+				left: 0px;
+				bottom: 0px;
+				padding: 25px;
+				padding-bottom: 0px;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+			.home_wellcome_article p{
+				font-size: 20px;
+				font-family: calibri, sans-serif;
+				word-wrap: break-word;
+				color: rgb(255, 255, 255);
+			}
+			.home_wellcome_article p em{
+				font-style: oblique;
+			}
+			.home_wellcome_article p strong{
+				font-weight: bold;
+				color: rgb(0, 200, 75);
+			}
+			.home_wellcome_nav{
+				width: 745px;
+				margin: auto;
+				margin-top: 25px;
+				margin-bottom: 25px;
+			}
+			.wellcome_nav_link{
+				width: 215px;
+				height:50px;
+				display: inline-block;
+				vertical-align: top;
+				border: 0;
+				border-radius: 3px;
+				background-color: rgb(0, 125, 75);
+				cursor: pointer;
+			}
+			.wellcome_nav_link:first-of-type, .wellcome_nav_link:nth-of-type(2){
+				margin-right: 50px;
+			}
+			.wellcome_nav_link a{
+				font-family: arial;
+				font-size: 20px;
+				text-decoration: none;
+				color: rgb(255, 255, 255);
+			}
+			.wellcome_nav_link:hover{
+				background-color:rgb(0, 50, 45);
+			}
+			.wellcome_nav_link:active{
+				background-color:rgb(225, 125, 0);
+			}
+			.home_advertisement{
+				width: 100%;
+				padding: 25px;
+			}
+			.home_advertisement_figs{
+				width: 1150px;
+				margin: auto;
+			}
+			.home_advertisement_fig{
+				width: 250px;
+				height: 125px;
+				display: inline-block;
+				vertical-align: top;
+			}
+			.home_advertisement_fig:nth-of-type(1), 
+			.home_advertisement_fig:nth-of-type(2), 
+			.home_advertisement_fig:nth-of-type(3){
+				margin-right: 50px;
+			}
+			.home_statistics{
+				width: 1150px;
+				margin: auto;
+				background-color: rgb(30, 30, 30);
+			}
+			.home_statistics_header{
+				width: 100%;
+				background-color: rgb(0, 0, 0);
+				padding: 15px 35px;
+			}
+			.home_statistics_title{
+				font-family: arial;
+				font-size: 25px;
+				font-weight: normal;
+				color: rgb(255, 255, 255);
+			}
+			.home_statistics_avity{
+				font-family: "century gothic";
+				color: rgb(0, 100, 255);
+			}
+			.home_statistics_comment{
+				color: rgb(0, 150, 75);
+			}
+			.home_statistics_content{
+				width: 100%;
+				padding: 25px;
+			}
+			.home_statistics_content td{
+				font-family: calibri, sans-serif;
+				font-size: 22px;
+			}
+			.home_statistics_label{
+				padding: 0px 10px;
+				color: rgb(0, 175, 225);
+			}
+			.home_statistics_inter{
+				color: rgb(255, 255, 255);
+			}
+			.home_statistics_value{
+				padding: 0px 20px;
+				color: rgb(0, 175, 100);
+			}
+			.home_down{
+				width: 1150px;
+				height: 300px;
+				margin: auto;
+				margin-top: 50px;
+			}
+			.home_avity{
+				width: 275px;
+				height: 300px;
+				margin-right: 20px;
+				display: inline-block;
+				vertical-align: top;
+			}
+			.home_avity_figure{
+				width: 100%;
+				height: 140px;
+			}
+			.home_avity_figure:nth-of-type(1){
+				margin-bottom: 20px;
+			}
+			.home_search{
+				width: 855px;
+				display: inline-block;
+				vertical-align: top;
+				background-color: rgb(100, 225, 255);
+			}
+			.home_search_header{
+				width: 100%;
+				height: 60px;
+				padding: 15px 25px;
+				padding-bottom: 0px;
+				background-color: rgb(0, 20, 15);
+			}
+			.home_search_header h1{
+				font-family: arial;
+				font-size: 25px;
+				font-weight: normal;
+				color: rgb(0, 100, 255);
+			}
+			.home_search_form{
+				width: 50%;
+				height: 240px;
+				padding: 15px 25px;
+				display: inline-block;
+				vertical-align: top;
+			}
+			.home_search_form:nth-of-type(1){
+				border-right: 1px solid black;
+			}
+			.home_search_form:nth-of-type(2){
+				border-left: 1px solid black;
+			}
+			.search_form_label{
+				font-family: arial;
+				font-size: 22px;
+				font-weight: normal;
+				color: rgb(255, 255, 255);
+			}
+		</style>
+	</head>
+	<body>
+		<header class="home_header">
+			<section class="home_header_flash">
+				<aside class="avity_logo">
+					<img src="avity_green.png" />
+				</aside><section class="flash_nav">
+					<section class="flash_nav_link">
+						<div class="invisible"></div>
+						<div class="flash_nav_link_text">
+							<span class="icon ion-ios-folder-outline"></span>
+							Catalogue
+						</div>
+					</section><section class="flash_nav_link">
+						<div class="invisible"></div>
+						<div class="flash_nav_link_text">
+							<span class="icon ion-ios-search"></span>
+							Rechercher
+						</div>
+					</section><section class="flash_nav_link">
+						<div class="invisible"></div>
+						<a href="Avity-Profil.html" class="flash_nav_link_text">
+							<span class="icon ion-ios-contact"></span>
+							 Mon compte
+						</a>
+						<span class="down-icon icon ion-ios-arrow-down"></span>
+					</section>
+				</section>
+			</section>
+			<nav class="home_header_nav">
+				<div class="invisible"></div>
+				<section class="header_nav_link">
+					<a class="header_nav_link_text" href="Avity-Apropos.html">
+						<span class="icon ion-ios-information-outline"></span>
+						A propos
+					</a>
+				</section>
+				<section class="header_nav_link">
+					<a class="header_nav_link_text" href="avity help.html">
+						<span class="icon ion-ios-help-outline"></span>
+						Aide
+					</a>
+				</section>
+				<section class="header_nav_link">
+					<a class="header_nav_link_text" href="Avity-CG.html">
+						<span class="icon ion-ios-list-outline"></span>
+						Conditions Générales
+					</a>
+				</section>
+			</nav>
+		</header>
+		<section class="home_wellcome">
+			<figure class="home_wellcome_image">
+				<img src="contacts.jpg" />
+			</figure>
+			<h1 class="home_wellcome_advertisement">
+				<strong>AVITY</strong> c'est fou hein!<br/>
+				En deux heures, quatre personnes sont déja intéressées par mon pc!
+			</h1>
+			<article class="home_wellcome_article">
+				<p>
+					<strong>AVITY</strong> est un site qui vous permet de poster <em>rapidement</em> un produit ou un service que vous voulez vendre, louer ou bayer; ainsi que toutes les informtions qui vont avec.<br/>
+					Il vous permet de consulter <em>en deux clics</em> le cathalogue des produits et services qui vous présente les contacts de leurs fournisseurs.<br/>
+					vous pouvez aussi lancer des offres et des demandes d'emploi.<br/>
+					Tout le site est <em>simple d'usage</em> et <em>totalement <strong>gratuit</strong></em>!
+				</p>
+				<nav class="home_wellcome_nav">
+					<button class="wellcome_nav_link">
+						<a href="">Visitez le catalogue <span class="icon ion-ios-navigate"></span></a>
+					</button><button class="wellcome_nav_link">
+						<a href="">Inscrivez-vous  <span class="icon ion-ios-locked"></span></a>
+					</button><button class="wellcome_nav_link">
+						<a href="Avity-Connexion.html">connectez-vous <span class="icon ion-ios-contact"></span></a>
+					</button>
+				</nav>
+			</article>
+		</section>
+		<aside class="home_advertisement">
+			<div class="home_advertisement_figs">
+				<figure class="home_advertisement_fig">
+					<img src="bmw.jpg"/>
+				</figure><figure class="home_advertisement_fig">
+					<img src="family.jpg"/>
+				</figure><figure class="home_advertisement_fig">
+					<img src="laptop.jpg"/>
+				</figure><figure class="home_advertisement_fig">
+					<img src="photography.jpg"/>
+				</figure>
+			</div>
+		</aside>
+		<article class="home_statistics">
+			<header class="home_statistics_header">
+				<h1 class="home_statistics_title">
+					<strong class="home_statistics_avity">AVITY</strong> - <span class="home_statistics_comment">Statistiques en temps réel</span>
+				</h1>
+			</header>	
+			<section class="home_statistics_content">
+				<table>
+					<tr>
+						<td class="home_statistics_label">Nombres de visites en cours</td>
+						<td class="home_statistics_inter"> : </td>
+						<td class="home_statistics_value">578</td>
+					</tr>
+					<tr>
+						<td class="home_statistics_label">Nombres de visites aujourd'hui</td>
+						<td class="home_statistics_inter"> : </td>
+						<td class="home_statistics_value">2 416</td>
+					</tr>
+					<tr>
+						<td class="home_statistics_label">Nombres de visites ce mois</td>
+						<td class="home_statistics_inter"> : </td>
+						<td class="home_statistics_value">62 476</td>
+					</tr>
+				</table>
+			</section>
+		</article>
+		<section class="home_down">
+			<section class="home_avity">
+				<figure class="home_avity_figure">
+					<img src="avity.jpg" alt="AVITY"/>
+				</figure>
+				<figure class="home_avity_figure">
+					<img src="offre.jpg" alt="AVITY"/>
+				</figure>
+			</section><section class="home_search">
+				<header class="home_search_header">
+					<h1>
+						Rechercher dans le catalogue
+					</h1>
+				</header>
+				<form class="home_search_form" method="POST" action="">
+					<h2 class="search_form_label">Rechercher un produit</h2><br>
+					<input type="search" name="search" placeholder="Entrer un produit">
+				</form><form class="home_search_form" method="POST" action="">
+					<h2 class="search_form_label">Rechercher un emploi rapide</h2><br>
+					<input type="search" name="search-job" placeholder="Entrer un emploi">
+				</form> 
+			</section>
+		</section>
+	</body>
+</html>
